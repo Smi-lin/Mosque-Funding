@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
-dotenv.config(); // must be first
+dotenv.config(); 
 
-console.log("ADMIN_SECRET:", process.env.ADMIN_SECRET); // debug
+console.log("ADMIN_SECRET:", process.env.ADMIN_SECRET); 
 
 import express from "express";
 import mongoose from "mongoose";
@@ -11,17 +11,17 @@ import adminRoutes from "./routes/adminRoutes.js";
 
 const app = express();
 
-// Middleware
+
 app.use(cors());
 app.use(express.json());
 app.use("/uploads", express.static("uploads")); 
 
-// Routes
+
 app.use("/api/donations", donationRoutes);
 app.use("/api/admin/mosque/fund", adminRoutes);
 
 
-// Connect to MongoDB
+
 const MONGO_URI = process.env.MONGO_URI;
 mongoose
   .connect(MONGO_URI)
