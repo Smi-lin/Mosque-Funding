@@ -41,15 +41,6 @@ const Navbar = () => {
 
           {/* Right Section */}
           <div className="hidden md:flex items-center space-x-6">
-            <button className="text-white hover:text-[#D4AF37] transition duration-200">
-              <Bell className="h-5 w-5" />
-            </button>
-            <Link
-              to="/admin"
-              className="text-white hover:text-[#D4AF37] transition duration-200"
-            >
-              <User className="h-5 w-5" />
-            </Link>
 
             <Link
               to="/donate"

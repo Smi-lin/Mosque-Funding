@@ -29,9 +29,9 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-4 text-[#D4AF37]">Contact</h3>
           <ul className="space-y-2 text-gray-200">
-            <li>📍 12 Unity Street, Lagos, Nigeria</li>
-            <li>📞 +234 812 345 6789</li>
-            <li>📧 mosqueproject@gmail.com</li>
+            <li>📍4 Mujjahidun Crescent, behind industrial estate Nigeria</li>
+            <li>📞 +234 813 704 152 6</li>
+            <li>📧 mujjahiduuncentral@gmail.com</li>
           </ul>
 
           {/* Social Links */}

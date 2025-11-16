@@ -88,7 +88,7 @@ const ContactPage = () => {
           <h2 className="text-2xl font-bold text-[#1D4D4F] mb-4">Contact Info</h2>
           <div className="flex items-center space-x-4">
             <span className="text-[#1D4D4F] font-semibold">📧</span>
-            <span className="text-gray-700">rokibatolajide48@gmail.com</span>
+            <span className="text-gray-700">mujjahiduuncentral@gmail.com</span>
           </div>
           <div className="flex items-center space-x-4">
             <span className="text-[#1D4D4F] font-semibold">📞</span>
@@ -96,7 +96,7 @@ const ContactPage = () => {
           </div>
           <div className="flex items-center space-x-4">
             <span className="text-[#1D4D4F] font-semibold">📍</span>
-            <span className="text-gray-700">123 Mosque Street, Lagos, Nigeria</span>
+            <span className="text-gray-700">4 Mujjahidun Crescent behind industrial estate Nigeria</span>
           </div>
         </div>
       </div>

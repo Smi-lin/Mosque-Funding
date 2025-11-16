@@ -57,15 +57,15 @@ const ContactSection = () => {
           <ul className="space-y-4 text-[#1A1A1A]">
             <li>
               <span className="font-semibold">Address:</span>
-              <p className="text-[#1A1A1A]">123 Charity Street, Lagos, Nigeria</p>
+              <p className="text-[#1A1A1A]">4 Mujjahiduun Crescent, behind industrial estate, Nigeria</p>
             </li>
             <li>
               <span className="font-semibold">Email:</span>
-              <p className="text-[#1A1A1A]">support@mosquefund.org</p>
+              <p className="text-[#1A1A1A]">mujjahiduuncentral@gmail.com</p>
             </li>
             <li>
               <span className="font-semibold">Phone:</span>
-              <p className="text-[#1A1A1A]">+234 812 345 6789</p>
+              <p className="text-[#1A1A1A]">+234 813 704 152 6</p>
             </li>
           </ul>
 
