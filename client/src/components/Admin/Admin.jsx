@@ -28,7 +28,7 @@ const AdminDashboard = () => {
     setError("");
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/admin/donations",
+       `${import.meta.env.VITE_API_URL}/api/admin/donations`,
         { headers: { "x-admin-key": adminKey } }
       );
       setDonations(response.data);
@@ -65,7 +65,7 @@ const AdminDashboard = () => {
   const handleDelete = async (id) => {
     if (!window.confirm("Are you sure you want to delete this donation?")) return;
     try {
-      await axios.delete(`http://localhost:5000/api/admin/donations/${id}`, {
+      await axios.delete(`${import.meta.env.VITE_API_URL}/api/admin/donations/{id}`, {
         headers: { "x-admin-key": adminKey },
       });
       fetchDonations();

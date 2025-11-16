@@ -28,7 +28,7 @@ const AdminDashboard = () => {
     setError("");
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/admin/mosque/fund/donations",
+        `${import.meta.env.VITE_API_URL}/api/admin/mosque/fund/donations`,
         { headers: { "x-admin-key": adminKey } }
       );
       setDonations(response.data || []);
@@ -78,7 +78,7 @@ const AdminDashboard = () => {
     if (!window.confirm("Are you sure you want to delete this donation?")) return;
     try {
       await axios.delete(
-        `http://localhost:5000/api/admin/mosque/fund/donations/${id}`,
+        `${import.meta.env.VITE_API_URL}/api/admin/mosque/fund/donations/{id}`,
         { headers: { "x-admin-key": adminKey } }
       );
       fetchDonations();

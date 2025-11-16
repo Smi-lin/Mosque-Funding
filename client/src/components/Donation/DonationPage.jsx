@@ -19,7 +19,7 @@ const DonationPage = () => {
 
   const fetchDonations = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/donations");
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/donations`);
       const sum = response.data.reduce((acc, donation) => acc + donation.amount, 0);
       setTotalRaised(sum);
     } catch (err) {

@@ -95,19 +95,7 @@ const Navbar = () => {
               Contact
             </Link>
 
-            <div className="flex items-center justify-between pt-3 border-t border-[#D4AF37]">
-              <div className="flex items-center space-x-4 mt-3">
-                <button className="text-white hover:text-[#D4AF37]">
-                  <Bell className="h-5 w-5" />
-                </button>
-                <Link
-                  to="/admin"
-                  className="text-white hover:text-[#D4AF37]"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  <User className="h-5 w-5" />
-                </Link>
-              </div>
+            <div className="flex items-center justify-between pt-3 border-t border-[#D4AF37]"> 
               <Link
                 to="/donate"
                 className="bg-[#D4AF37] text-white hover:bg-white hover:text-[#1E5631] transition duration-200 font-semibold px-3 py-2 rounded-full"
