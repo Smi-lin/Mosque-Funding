@@ -103,13 +103,13 @@ const About = () => {
             Our Story
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Our community is coming together to build a brand-new mosque — a
+            Our community is coming together to build a brand-new mosque a
             place that will serve as a center of prayer, learning, and unity.
             This new project is a shared vision aimed at creating a bigger, more
             comfortable, and modern worship space for everyone.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Every donation — no matter the size — brings us closer to
+            Every donation no matter the size brings us closer to
             establishing a beautiful and lasting house of worship for present
             and future generations.
           </p>

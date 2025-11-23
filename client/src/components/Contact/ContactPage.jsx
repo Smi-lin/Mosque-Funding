@@ -25,14 +25,14 @@ const ContactPage = () => {
     <section className="bg-[#F5F5DC] min-h-screen">
     <Navbar/>
       <div className="text-center max-w-3xl mx-auto mb-12">
-        <h1 className="text-4xl font-bold text-[#1D4D4F] mb-4">Get in Touch</h1>
+        <h1 className="text-4xl font-bold text-[#1D4D4F] mb-4 mt-10">Get in Touch</h1>
         <p className="text-gray-700 text-lg">
           Have questions, feedback, or want to support the mosque? Reach out to us below.
         </p>
       </div>
 
       {/* Form & Contact Info */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 mb-10">
         {/* Contact Form */}
         <form
           onSubmit={handleSubmit}

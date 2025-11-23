@@ -14,24 +14,27 @@ import Gallery6 from "../../assets/M2.png";
 import Gallery7 from "../../assets/M4.png";
 
 const DonationPage = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [totalRaised, setTotalRaised] = useState(0);
-  const goal = 500_000_000;
+ const [isModalOpen, setIsModalOpen] = useState(false);
+const [totalRaised, setTotalRaised] = useState(0);
 
-  const fetchDonations = async () => {
-    try {
-      const response = await axios.get(
-        `${import.meta.env.VITE_API_URL}/api/donations`
-      );
-      const sum = response.data.reduce(
-        (acc, donation) => acc + donation.amount,
-        0
-      );
-      setTotalRaised(sum);
-    } catch (err) {
-      console.error(err);
-    }
-  };
+// Updated goal
+const goal = 900_809_478.28;
+
+const fetchDonations = async () => {
+  try {
+    const response = await axios.get(
+      `${import.meta.env.VITE_API_URL}/api/donations`
+    );
+    const sum = response.data.reduce(
+      (acc, donation) => acc + donation.amount,
+      0
+    );
+    setTotalRaised(sum);
+  } catch (err) {
+    console.error(err);
+  }
+};
+
 
   useEffect(() => {
     fetchDonations();
