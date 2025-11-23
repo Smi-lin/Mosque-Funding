@@ -12,7 +12,7 @@ const AdminDashboard = () => {
   const [endDate, setEndDate] = useState("");
   const [adminKey, setAdminKey] = useState("");
 
-  const DONATION_TARGET = 500000; // Example target for progress bar
+  const DONATION_TARGET = 500000; 
 
   // Prompt for admin key
   useEffect(() => {

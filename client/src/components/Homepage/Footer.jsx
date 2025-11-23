@@ -10,7 +10,7 @@ const Footer = () => {
         <div>
           <h2 className="text-2xl font-bold text-[#D4AF37] mb-3">Mosque</h2>
           <p className="text-sm leading-relaxed text-gray-200">
-            Join us in rebuilding and supporting our community mosque. Every contribution brings us closer to completing this noble cause.
+            Join us in building and supporting our community mosque. Every contribution brings us closer to completing this noble cause.
           </p>
         </div>
 

@@ -12,13 +12,13 @@ const HeroSection = ({ progress = 0 }) => {
       <div className="absolute inset-0 bg-[#1E5631]/70"></div>
 
       <div className="relative z-10 text-center text-white px-6 max-w-3xl">
-        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
-          Help Rebuild Our Community Mosque
-        </h1>
-        <p className="text-lg md:text-xl mb-6 text-gray-200">
-          Join hands to support the renovation and make a lasting impact on our
-          community.
-        </p>
+       <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+  Help Build Our New Community Mosque
+</h1>
+<p className="text-lg md:text-xl mb-6 text-gray-200">
+  Join hands to support the construction of a new mosque that will serve our community for generations to come.
+</p>
+
 
         <Link to="/donate">
           <button className="bg-[#D4AF37] hover:bg-white hover:text-[#1E5631] text-white font-semibold px-6 py-3 rounded-full transition duration-300">

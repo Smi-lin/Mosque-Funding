@@ -4,11 +4,11 @@ import mosqueImg from "../../assets/aboutmosque.jpg";
 import Navbar from "../Homepage/Navbar";
 import Footer from "../Homepage/Footer";
 
+
 const About = () => {
   return (
     <section className="bg-gray-50">
       <Navbar />
-
       {/* Hero Section */}
       <div className="relative w-full h-[60vh] flex items-center justify-center bg-[#1E5631]/90">
         <img
@@ -90,13 +90,12 @@ const About = () => {
         </div>
       </div>
 
-  
-
       {/* Story Section */}
+
       <div className="max-w-6xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-10">
         <img
           src={mosqueImg}
-          alt="Mosque Renovation"
+          alt="New Mosque Project"
           className="w-full md:w-1/2 rounded-2xl shadow-md"
         />
         <div className="md:w-1/2">
@@ -104,32 +103,33 @@ const About = () => {
             Our Story
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            The mosque has been a cornerstone of our community for decades. Over
-            time, the building has aged and requires urgent renovation to ensure
-            safety and functionality. This project is our collective effort to
-            preserve the mosque’s legacy and continue its vital role in our
-            lives.
+            Our community is coming together to build a brand-new mosque — a
+            place that will serve as a center of prayer, learning, and unity.
+            This new project is a shared vision aimed at creating a bigger, more
+            comfortable, and modern worship space for everyone.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Every donation — no matter the size — brings us closer to our goal
-            of creating a welcoming and lasting space for everyone.
+            Every donation — no matter the size — brings us closer to
+            establishing a beautiful and lasting house of worship for present
+            and future generations.
           </p>
         </div>
       </div>
 
       {/* Call-to-Action Section */}
+
       <div className="bg-[#D4AF37] text-center py-16 text-[#1E5631]">
-        <h2 className="text-3xl font-bold mb-4">Be Part of the Change</h2>
+        <h2 className="text-3xl font-bold mb-4">Be Part of the Blessing</h2>
         <p className="max-w-2xl mx-auto mb-6">
-          Your contribution will help us complete this renovation and strengthen
-          our community.
+          Your contribution will help us build a new mosque and strengthen our
+          community for generations to come.
         </p>
 
         <Link
           to="/donate"
           className="bg-[#1E5631] text-white px-6 py-3 rounded-full font-medium hover:bg-[#184d2c] transition"
         >
-          Support the Renovation
+          Support the Project
         </Link>
       </div>
 

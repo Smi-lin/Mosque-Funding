@@ -18,12 +18,13 @@ const AboutSection = () => {
         {/* Text Content */}
         <div>
           <h2 className="text-3xl font-bold text-[#1E5631] mb-4">
-            About the Renovation Project
+           About the New Mosque Project
           </h2>
           <p className="text-gray-700 mb-6 leading-relaxed">
-            Our community mosque has served as a place of prayer and unity for
-            decades. Now, it needs urgent renovation — from rebuilding its
-            structure to improving the prayer space and facilities for all.
+            Our community is working together to build a brand-new mosque, 
+            A place that will serve as a center of worship, learning, and unity for everyone. 
+            This new project aims to provide a bigger prayer area, better facilities, 
+            and a more comfortable environment for all worshippers, young and old.
           </p>
 
           <Link

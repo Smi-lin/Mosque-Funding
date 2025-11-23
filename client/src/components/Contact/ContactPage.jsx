@@ -92,7 +92,7 @@ const ContactPage = () => {
           </div>
           <div className="flex items-center space-x-4">
             <span className="text-[#1D4D4F] font-semibold">📞</span>
-            <span className="text-gray-700">+234 813 704 152 6</span>
+            <span className="text-gray-700">+234 805 577 712 5  <strong>OR</strong> +234 809 675 150 1</span>
           </div>
           <div className="flex items-center space-x-4">
             <span className="text-[#1D4D4F] font-semibold">📍</span>

@@ -19,8 +19,13 @@ const DonationPage = () => {
 
   const fetchDonations = async () => {
     try {
-      const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/donations`);
-      const sum = response.data.reduce((acc, donation) => acc + donation.amount, 0);
+      const response = await axios.get(
+        `${import.meta.env.VITE_API_URL}/api/donations`
+      );
+      const sum = response.data.reduce(
+        (acc, donation) => acc + donation.amount,
+        0
+      );
       setTotalRaised(sum);
     } catch (err) {
       console.error(err);
@@ -32,28 +37,42 @@ const DonationPage = () => {
   }, []);
 
   const handleDonateSuccess = (amount) => {
-    setTotalRaised(prev => prev + amount);
+    setTotalRaised((prev) => prev + amount);
   };
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
-  const galleryImages = [Gallery1, Gallery2, Gallery4, Gallery5, Gallery6, Gallery7];
+  const galleryImages = [
+    Gallery1,
+    Gallery2,
+    Gallery4,
+    Gallery5,
+    Gallery6,
+    Gallery7,
+  ];
 
   return (
     <section className="bg-[#F5F5DC] min-h-screen">
-    
-     <Navbar/>
+      <Navbar />
       <div
         className="relative w-full h-[60vh] flex items-center justify-center"
-        style={{ backgroundImage: `url(${Gallery1})`, backgroundSize: "cover", backgroundPosition: "center" }}
+        style={{
+          backgroundImage: `url(${Gallery1})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
       >
         <div className="absolute w-full h-full bg-[#1D4D4F]/70"></div>
         <div className="relative text-center text-white px-4 z-10">
-          <h1 className="text-4xl md:text-5xl font-bold mb-3">Support the Mosque Renovation</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-3">
+            Support the New Mosque Project
+          </h1>
           <p className="max-w-2xl mx-auto text-lg mb-6">
-            Every contribution brings us closer to completing this sacred project.
+            Every contribution brings us closer to building a new house of
+            worship for our community.
           </p>
+
           <button
             onClick={openModal}
             className="bg-[#D4AF37] text-[#1D4D4F] px-6 py-3 rounded-xl font-semibold hover:bg-[#c29e2e] transition duration-300"
@@ -65,21 +84,29 @@ const DonationPage = () => {
 
       {/* Overview & Progress Section */}
       <div className="max-w-4xl mx-auto py-16 px-6 text-center">
-        <h2 className="text-3xl font-bold text-[#1D4D4F] mb-4">About the Project</h2>
+        <h2 className="text-3xl font-bold text-[#1D4D4F] mb-4">
+          About the Project
+        </h2>
         <p className="text-gray-700 mb-6">
-          Our mosque has been the heart of the community for decades. Over time, the building
-          has aged and needs urgent renovation. Your donations will help restore its structure,
-          enhance safety, and ensure a welcoming space for everyone.
+          Our community is working together to build a brand-new mosque — a
+          place that will serve as a center of prayer, learning, and unity. This
+          new project aims to provide a larger, more comfortable prayer space
+          and modern facilities that will meet the needs of worshippers for
+          generations to come.
         </p>
+
         <ProgressBar progress={Math.min((totalRaised / goal) * 100, 100)} />
         <p className="text-gray-600 mt-2">
-          ₦{totalRaised.toLocaleString()} raised out of ₦{goal.toLocaleString()} goal
+          ₦{totalRaised.toLocaleString()} raised out of ₦{goal.toLocaleString()}{" "}
+          goal
         </p>
       </div>
 
       {/* Gallery Section */}
       <div className="max-w-6xl mx-auto px-6 pb-16">
-        <h2 className="text-3xl font-bold text-[#1D4D4F] mb-6 text-center">Project Gallery</h2>
+        <h2 className="text-3xl font-bold text-[#1D4D4F] mb-6 text-center">
+          Project Gallery
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {galleryImages.map((img, index) => (
             <img
@@ -92,29 +119,33 @@ const DonationPage = () => {
         </div>
       </div>
 
-          {/* Purpose Section */}
-            <div className="max-w-5xl mx-auto px-6 py-16 bg-white shadow-md rounded-2xl border-t-4 border-[#1E5631] mb-20">
-              <h2 className="text-3xl font-semibold text-[#1E5631] mb-4 text-center">
-                Our Purpose
-              </h2>
-              <p className="text-gray-700 leading-relaxed text-center max-w-3xl mx-auto">
-                Our purpose is to rebuild more than just walls — it is to revive faith,
-                unity, and community spirit. The mosque renovation represents a shared
-                vision of nurturing hearts, guiding generations, and providing a home
-                for prayer, learning, and togetherness. Through this project, we aim
-                to create a sacred space that inspires every believer to connect more
-                deeply with Allah (SWT), serve others with compassion, and uphold the
-                timeless values of Islam in everyday life.
-              </p>
-            </div>
+      {/* Purpose Section */}
+      <div className="max-w-5xl mx-auto px-6 py-16 bg-white shadow-md rounded-2xl border-t-4 border-[#1E5631] mb-20">
+        <h2 className="text-3xl font-semibold text-[#1E5631] mb-4 text-center">
+          Our Purpose
+        </h2>
+        <p className="text-gray-700 leading-relaxed text-center max-w-3xl mx-auto">
+          Our purpose is to build more than just a mosque it is to create a
+          sacred home for worship, community growth, and spiritual connection.
+          This new building represents a shared vision of strengthening faith,
+          supporting future generations, and fostering unity among all members
+          of our community. Through this project, we aim to establish a peaceful
+          space where believers can come together to pray, learn, and grow
+          closer to Allah (SWT).
+        </p>
+      </div>
 
-      {/* Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
           <div className="bg-white rounded-2xl shadow-lg max-w-3xl w-full mx-4 overflow-y-auto max-h-[90vh]">
             <div className="flex justify-between items-center p-4 border-b">
-              <h3 className="text-xl font-semibold text-[#1D4D4F]">Confirm Your Donation</h3>
-              <button onClick={closeModal} className="text-gray-500 hover:text-[#1D4D4F] transition">
+              <h3 className="text-xl font-semibold text-[#1D4D4F]">
+                Confirm Your Donation
+              </h3>
+              <button
+                onClick={closeModal}
+                className="text-gray-500 hover:text-[#1D4D4F] transition"
+              >
                 ✕
               </button>
             </div>
@@ -125,7 +156,7 @@ const DonationPage = () => {
           </div>
         </div>
       )}
-      <Footer/>
+      <Footer />
     </section>
   );
 };
