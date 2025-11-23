@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import donateImg from "../../assets/donate-bg.png"; 
+import muj from "../../assets/muj1.png"
 
 const DonationSection = () => {
   return (
@@ -29,7 +29,7 @@ const DonationSection = () => {
 
         <div>
           <img
-            src={donateImg}
+            src={muj}
             alt="Donate to Mosque"
             className="rounded-2xl shadow-lg w-full object-cover"
           />
