@@ -37,6 +37,12 @@ const Navbar = () => {
             >
               Contact
             </Link>
+            <Link
+              to="/project-details"
+              className="text-white hover:text-[#D4AF37] transition duration-200 font-medium text-sm"
+            >
+              Project Details
+            </Link>
           </div>
 
           <div className="hidden md:flex items-center space-x-6">

@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import DonationPage from "./components/Donation/DonationPage";
 import ContactPage from "./components/Contact/ContactPage";
 import AdminDashboard from "./components/Admin/AdminDashboard";
+import ProjectDetails from "./components/ProjectDetails/ProjectDetails";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/donate" element={<DonationPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/project-details" element={<ProjectDetails />} />
           <Route path="/admin/mosque/fund" element={<AdminDashboard />} />
         </Routes>
       </BrowserRouter>
