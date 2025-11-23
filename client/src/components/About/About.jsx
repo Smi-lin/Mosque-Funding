@@ -38,12 +38,12 @@ const About = () => {
             <li>
               To build a spiritually enlightened and united Ummah, rooted in
               Taqwa (God-consciousness), noble character, and compassionate
-              service to humanity — creating a community where Islamic values
+              service to humanity, creating a community where Islamic values
               illuminate every aspect of life.
             </li>
             <li>
               To nurture a generation grounded in faith, integrity, and
-              knowledge — one that thrives in both spiritual and worldly
+              knowledge one that thrives in both spiritual and worldly
               excellence.
             </li>
             <li>
@@ -66,7 +66,7 @@ const About = () => {
           <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-3">
             <li>
               To strengthen faith and deepen the understanding of Islam through
-              authentic education based on the Qur’an and Sunnah.
+              authentic education based on the Qur'an and Sunnah.
             </li>
             <li>
               To promote good character (Akhlaq), mutual respect, and a strong
@@ -78,7 +78,7 @@ const About = () => {
               and worldly pursuits.
             </li>
             <li>
-              To serve humanity with compassion — supporting the needy, guiding
+              To serve humanity with compassion supporting the needy, guiding
               those in spiritual or personal distress, and uplifting every soul
               through kindness.
             </li>

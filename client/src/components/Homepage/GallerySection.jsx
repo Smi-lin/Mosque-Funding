@@ -1,10 +1,10 @@
 import React from 'react'
-import Gallery1 from "../../assets/Gallery1-bg.png"
-import Gallery2 from "../../assets/Galley2-bg.png"
-import Gallery4 from "../../assets/Gallery4.jpg"
-import Gallery5 from "../../assets/Gallery5.jpg"
-import Gallery6 from "../../assets/Gallery6.jpg"
-import Gallery7 from "../../assets/Gallery7.jpg"
+import Gallery1 from "../../assets/M1.png";
+import Gallery2 from "../../assets/M5.png";
+import Gallery4 from "../../assets/M6.png";
+import Gallery5 from "../../assets/M3.png";
+import Gallery6 from "../../assets/M2.png";
+import Gallery7 from "../../assets/M4.png";
 
 const GallerySection = () => {
   const galleryImages = [

@@ -1,5 +1,4 @@
 import React from "react";
-import mosque from "../../assets/Mosque-bg.png";
 import muj from "../../assets/muj1.png"
 import { Link } from "react-router-dom";
 

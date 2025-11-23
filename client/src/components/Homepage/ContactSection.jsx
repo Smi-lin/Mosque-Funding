@@ -65,7 +65,7 @@ const ContactSection = () => {
             </li>
             <li>
               <span className="font-semibold">Phone:</span>
-              <p className="text-[#1A1A1A]">+234 813 704 152 6</p>
+              <p className="text-[#1A1A1A]">+234 805 577 712 5  <strong>OR</strong> +234 809 675 150 1</p>
             </li>
           </ul>
 
