@@ -16,15 +16,16 @@ const About = () => {
           alt="Mosque"
           className="absolute w-full h-full object-cover opacity-40"
         />
-        <div className="relative text-center text-white z-10 px-4">
-          <h1 className="text-4xl font-bold mb-3">
-            About the Mosque Renovation Project
-          </h1>
-          <p className="max-w-2xl mx-auto text-gray-200 text-lg">
-            A community-driven initiative to rebuild and restore our local
-            mosque for future generations.
-          </p>
-        </div>
+       <div className="relative text-center text-white z-10 px-4">
+  <h1 className="text-4xl font-bold mb-3">
+    About the New Mosque Project
+  </h1>
+  <p className="max-w-2xl mx-auto text-gray-200 text-lg">
+    A community-driven effort to build a new mosque that will serve as a center
+    of worship, learning, and unity for generations to come.
+  </p>
+</div>
+
       </div>
 
       {/* Vision & Mission Section */}
