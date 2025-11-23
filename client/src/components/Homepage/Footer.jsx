@@ -30,7 +30,7 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-4 text-[#D4AF37]">Contact</h3>
           <ul className="space-y-2 text-gray-200">
             <li>📍4 Mujjahidun Crescent, behind industrial estate Nigeria</li>
-            <li>📞 +234 813 704 152 6</li>
+            <li>📞 +234 805 577 712 5  <strong>OR</strong> +234 809 675 150 1</li>
             <li>📧 mujjahiduuncentral@gmail.com</li>
           </ul>
 
