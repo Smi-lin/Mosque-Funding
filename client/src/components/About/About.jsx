@@ -25,7 +25,7 @@ const About = () => {
     of worship, learning, and unity for generations to come.
   </p>
 </div>
-
+ 
       </div>
 
       {/* Vision & Mission Section */}

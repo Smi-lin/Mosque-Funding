@@ -98,6 +98,13 @@ const Navbar = () => {
             >
               Contact
             </Link>
+                <Link
+              to="/project-details"
+               className="block text-white hover:text-[#D4AF37] font-medium text-base transition duration-200"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Project Details
+            </Link>
 
             <div className="flex items-center justify-between pt-3 border-t border-[#D4AF37]"> 
               <Link
